@@ -1,0 +1,33 @@
+body{
+    background-image:url("https://jnewbio.edublogs.org/files/2015/11/pixel77_free_vector_music_concept_0218_300_by_cristina012-d5wkuz1-28w6lr5.jpg");
+    background-size:cover;
+     }
+button{
+    color:#00FFFF;
+     background-color:#0000FF;
+       border:#00FFFF  ridge 3px;
+    }
+
+h1{
+    border:black  ridge 6px;
+    color:#C71585;
+    background-color:#191970;
+    
+    }
+
+.first{
+    color: red;
+    font-family: 'Satisfy', cursive;
+    }
+.last{
+    color: red;
+    font-family: 'Satisfy', cursive;
+    }
+#name{
+    color:red;
+    font-family: 'Satisfy', cursive;
+    border:red solid 7px;
+     padding:10px;
+     width: 200px;
+      
+    }
