@@ -1,0 +1,104 @@
+<!DOCTYPE html> <html><head>
+        <title>CELEBERTY NAME GENERATOR</title>
+    <style>body{
+    background-image:url("https://jnewbio.edublogs.org/files/2015/11/pixel77_free_vector_music_concept_0218_300_by_cristina012-d5wkuz1-28w6lr5.jpg");
+    background-size:cover;
+     }
+button{
+    color:#00FFFF;
+     background-color:#0000FF;
+       border:#00FFFF  ridge 3px;
+    }
+
+h1{
+    border:black  ridge 6px;
+    color:#C71585;
+    background-color:#191970;
+    
+    }
+
+.first{
+    color: red;
+    font-family: 'Satisfy', cursive;
+    }
+.last{
+    color: red;
+    font-family: 'Satisfy', cursive;
+    }
+#name{
+    color:red;
+    font-family: 'Satisfy', cursive;
+    border:red solid 7px;
+     padding:10px;
+     width: 200px;
+      
+    }</style></head>
+    <body>
+    <h1>ARTIST NAME THAT FITS YOU BEST</h1>
+    <p> NOW you can find/know what name fits you best.Here you can find which artist you can compare to.</p>
+    <input class="first" placeholder="FIRST NAME">
+    <input class="last" placeholder="LASTNAME">
+    <br>
+    <button onclick="male()">MALE NAME</button>
+     <button onclick="female()">FEMALE NAME</button>
+        <p id="name"></p>
+    
+
+<script>
+/*__POPCODESTART__*/
+var maleName = ["chris brown" , "drake" , "arron carter" , "ace young" , "adam brody" , "alce baldwin" , "andy cohen" , "andrew garfield" , "brad pitt" , "chris evans" ,"chris pratt"];
+var femaleName = ["rihanna" , "cardi b" ,"arianna grade" ,"nicky manaje" ,"queen naija" ,"cameron diaz" ,"kylie jenner" , "britney spears" ,"ariel winter" , "ashley benson"];
+
+var first;
+var last;
+function male() {
+    first = document.querySelector(".first").value;
+    //console.log(first);
+    last = document.querySelector(".last").value;
+    //console.log(last);
+    var names = first + last;   
+    //console.log(names);
+    
+     switch(names){
+        case"katia": alert("boom");
+        break;
+        default:
+        var sum = Math.floor(Math.random()*10);
+        var random = maleName
+        [sum];
+        var firstUpper = first.toUpperCase();
+        var lastUpper = last.toUpperCase();
+        document.getElementById("name").innerHTML = firstUpper + "" + lastUpper + "" + random;
+        }
+}  
+    
+    function female() {
+    last = document.querySelector(".last").value;
+    //console.log(first);
+    first = document.querySelector(".first").value;
+    //console.log(last);
+    var names = first  + last ;   
+    //console.log(names);
+   
+    
+    switch(names){
+        case"kat": alert("got it");
+        break;
+        default:
+        var sum = Math.floor(Math.random()*10);
+        var random = femaleName // array
+        [sum];
+        var firstUpper = first.toUpperCase();
+        var lastUpper = last.toUpperCase();
+        document.getElementById("name").innerHTML = firstUpper + "" + lastUpper + "" + random;
+        }
+    }
+    
+
+//var names = first + last;
+//console.log(names);
+
+
+
+
+</script></body></html>
